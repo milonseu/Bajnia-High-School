@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.header{
+			min-height: 100px;
+			min-width: 360px;
+			background-color: #186A3B;
+		}
+		.notice{
+			min-height:30px; 
+			min-width: 360px;
+			background-color: #2E3632;
+		}
+		.menu{
+
+			min-height: 50px;
+			min-width: 360px;
+			background-color: #52BE80;
+		}
+		.body{
+			min-height: 480px;
+			min-width: 360px;
+			background-color: #D5DFD9;
+		}
+		.footer{
+			min-height: 50px;
+			min-width: 360px;
+			background-color: #7DCEA0;
+		}
+		.header, .notice, .menu, .body, .footer{
+			margin-left: 5px;
+			margin-right: 5px;
+			box-shadow: 1px;
+			border: 1px solid black;
+		}
+		.menu ul{
+			display:inline-flex;
+			list-style:none;
+		}
+		.menu ul li{
+			margin:10px;
+			padding:10px;
+		}
+		.menu ul li a{
+			text-decoration: none;
+			color: white;
+		}
+		.active, .menu ul li:hover{
+			background: black;
+			border-radius:30px;
+		}
+		.menu .fa{
+			margin-right:2px;
+		}
+		.sub-menu-1{
+			display:none;
+		}
+		.menu ul li:hover .sub-menu-1{
+			display:block;
+			position:fixed;
+			background-color:#52BE80;
+		}
+
+		.menu ul li:hover .sub-menu-1 ul{
+			display:block;
+			margin-right:0px;
+		}
+		.menu ul li:hover .sub-menu-1 ul li{
+			padding:10px;
+			margin-left:-25px;
+		}
+		.menu ul li:hover .sub-menu-1 ul li a:hover{
+			background-color: black; 
+		}
+		.main-image{
+			margin-bottom:-5px;
+			min-width: 480px;
+			min-height: 480px;
+		}
+		.footer ul{
+			display: inline-flex;
+			list-style: none;
+		}
+		.footer ul li{
+			margin: 10px;
+			padding-right: 100px;
+		}
+		.footer ul li a{
+			text-decoration: none;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<center>
+			<img src="png.jpg" align="left" width="auto" height="100px">
+			<img src="milon.jpg" align="right" width="auto" height="100px">
+			<p1 style="font-size: 20px">Bajnia High School, Bochagonj, Dinajpur<br>
+				বাজনিয়া উচ্চ বিদ্যালয়, বোচাগঞ্জ, দিনাজপুর<br>
+				EIIN : 120233</p1>
+		</center>
+	</div>
+	<div class="notice">
+		
+			<div style="background-color: black;color: white;min-width: 100px;min-height: 30px;float: left;">Notice Board:</div>
+            <div style="color: white;min-height: 30px;float: left;">	
+            	<marquee>ষষ্ঠ শ্রেণি থেকে নবম শ্রেণি পর্যন্ত ভর্তি এবং বই বিতরণ চলিতেছে। দেশকে নিরক্ষর মুক্ত করার লক্ষ্যে সরকারের বিনামূল্যে বই বিতরণে আমরা সরকারের প্রতি কৃতজ্ঞতা জ্ঞাপন করছি |
+            	</marquee>
+			</div>
+	</div>
+		<div class="menu">
+		<center>
+         <ul>
+	     <li class="active"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+              <li><a href="#"><i class="fa fa-info-circle"></i>About</a>
+                <div class="sub-menu-1">
+		 <ul>
+			<li><a href="#">Mission</a></li>
+			<li><a href="#">Vission</a></li>
+		
+		 <ul>
+		</div>
+	      </li>
+             <li><a href="#"><i class="fa fa-graduation-cap"></i>Administration</a>
+                <div class="sub-menu-1">
+		 <ul>
+			<li><a href="#">Governing Body</a></li>
+			<li><a href="#">Teacher Information</a></li>
+			<li><a href="#">Staff Information</a></li>
+		
+		 <ul>
+		</div>
+	      </li>
+	     </li>
+            
+	     <li><a href="#">Gallery</a>
+		<div class="sub-menu-1">
+		 <ul>
+			<li><a href="#"><i class="fa fa-camera"></i>Photo Gallery</a></li>
+			<li><a href="#"><i class="fa fa-file-video-o"></i>Video Gallery</a></li>
+		
+		 <ul>
+		</div>
+               </li>
+             <li><a href="#"><i class="fa fa-server"></i>Facilities</a></li>
+	     <li><a href="#"><i class="fa fa-phone"></i>Contract</a></li>
+
+              <li><a href="#"><i class="fa fa-sign-in"></i>LogIn</a></li>		
+	 </ul>
+		</center>
+	</div>
+	<div class="body">
+			<script>
+				var i = 0; 			// Start Point
+				var images = [];	// Images Array
+				var time = 3000;	// Time Between Switch
+					 
+				// Image List
+				images[0] = "image1.jpg";
+				images[1] = "image2.jpg";
+				images[2] = "image3.jpg";
+				images[3] = "image4.jpg";
+				images[4] = "image5.jpg";
+				images[5] = "image6.jpg";
+
+				// Change Image
+				function changeImg(){
+					document.slide.src = images[i];
+
+					// Check If Index Is Under Max
+					if(i < images.length - 1){
+					  // Add 1 to Index
+					  i++; 
+					} else { 
+						// Reset Back To O
+						i = 0;
+					}
+
+					// Run function every x seconds
+					setTimeout("changeImg()", time);
+				}
+
+				// Run function when page loads
+				window.onload=changeImg;
+			</script>
+			<center>
+				<img class="main-image" name="slide" width="350px" height="350px">
+			</center>			
+	</div>
+
+	<div class="footer">
+		<center>
+			<ul>
+				<li><a href="https://web.facebook.com/profile.php?id=100041804762031"><i class="fa fa-facebook-official"></i>Facebook Link</a></li>
+				<li><a href="https://www.sohopathi.com/bajnia-high-school/"><i class="fa fa-instagram"></i>Instragram Link</a></li>
+				<li><a href="https://www.sohopathi.com/bajnia-high-school/"><i class="fa fa-link"></i>Website Link</a></li>
+			</ul> 
+			<h5>Developed By: &copy Milon</h5>
+		</center>
+	</div>
+</body>
+</html>
