@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.header{
+			min-height: 100px;
+			min-width: 360px;
+			background-color: #186A3B;
+		}
+		.menu{
+
+			min-height: 50px;
+			min-width: 360px;
+			background-color: #52BE80;
+		}
+		.body{
+			min-height: 480px;
+			min-width: 360px;
+			background-color: #D5DFD9;
+		}
+		.footer{
+			min-height: 50px;
+			min-width: 360px;
+			background-color: #7DCEA0;
+		}
+		.header, .notice, .menu, .body, .footer{
+			margin-left: 5px;
+			margin-right: 5px;
+			box-shadow: 1px;
+			border: 1px solid black;
+		}
+		.menu ul{
+			display:inline-flex;
+			list-style:none;
+		}
+		.menu ul li{
+			margin:10px;
+			padding:10px;
+		}
+		.menu ul li a{
+			text-decoration: none;
+			color: white;
+		}
+		.active, .menu ul li:hover{
+			background: black;
+			border-radius:30px;
+		}
+		.menu .fa{
+			margin-right:2px;
+		}
+		.sub-menu-1{
+			display:none;
+		}
+		.menu ul li:hover .sub-menu-1{
+			display:block;
+			position:fixed;
+			background-color:#52BE80;
+		}
+
+		.menu ul li:hover .sub-menu-1 ul{
+			display:block;
+			margin-right:0px;
+		}
+		.menu ul li:hover .sub-menu-1 ul li{
+			padding:10px;
+			margin-left:-25px;
+		}
+		.menu ul li:hover .sub-menu-1 ul li a:hover{
+			background-color: black; 
+		}
+		.main-image{
+			margin-bottom:-5px;
+			min-width: 480px;
+			min-height: 480px;
+		}
+		.footer ul{
+			display: inline-flex;
+			list-style: none;
+		}
+		.footer ul li{
+			margin: 10px;
+			padding-right: 100px;
+		}
+		.footer ul li a{
+			text-decoration: none;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<center>
+			<img src="png.jpg" align="left" width="auto" height="100px">
+			<img src="milon.jpg" align="right" width="auto" height="100px">
+			<p1 style="font-size: 20px">Bajnia High School, Bochagonj, Dinajpur<br>
+				বাজনিয়া উচ্চ বিদ্যালয়, বোচাগঞ্জ, দিনাজপুর<br>
+				EIIN : 120233</p1>
+		</center>
+	</div>	
+		<div class="menu">
+		<center>
+         <ul>
+	     <li class="active"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+              <li><a href="#"><i class="fa fa-info-circle"></i>About</a>
+                <div class="sub-menu-1">
+		 <ul>
+		 	<li><a href="#">History</a></li>
+			<li><a href="#">Mission</a></li>
+			<li><a href="#">Vission</a></li>
+		
+		 <ul>
+		</div>
+	      </li>
+             <li><a href="#"><i class="fa fa-graduation-cap"></i>Administration</a>
+                <div class="sub-menu-1">
+		 <ul>
+			<li><a href="#">Governing Body</a></li>
+			<li><a href="#">Teacher Information</a></li>
+			<li><a href="#">Staff Information</a></li>
+		
+		 <ul>
+		</div>
+	      </li>
+	     </li>
+            
+	     <li><a href="#">Gallery</a>
+		<div class="sub-menu-1">
+		 <ul>
+			<li><a href="#"><i class="fa fa-camera"></i>Photo Gallery</a></li>
+			<li><a href="#"><i class="fa fa-file-video-o"></i>Video Gallery</a></li>
+		
+		 <ul>
+		</div>
+               </li>
+             <li><a href="#"><i class="fa fa-server"></i>Facilities</a></li>
+	     <li><a href="#"><i class="fa fa-phone"></i>Contract</a></li>
+
+              <li><a href="#"><i class="fa fa-sign-in"></i>LogIn</a></li>		
+	 </ul>
+		</center>
+	</div>
+	<div class="body">
+		<center>
+			<img class="main-image" src="image2.jpg" height="550px" width="520">
+			<div style="background-color: #D5DFD9;padding: 10px;margin-left: 400px;margin-right: 400px;border: 1px solid black;">
+				Bajnia school started journy at 1993 with three class room and one office room.
+        		That time, there was five faculty and one peon. The school was built at their 
+				own funds to educate the boys and girls of our area. Now there has enough room
+				, enough faculty, staff and also have an nice playground. Now there lots of
+				student study here.
+			</div>
+		</center>				
+	</div>
+
+	<div class="footer">
+		<center>
+			<ul>
+				<li><a href="https://web.facebook.com/profile.php?id=100041804762031"><i class="fa fa-facebook-official"></i>Facebook Link</a></li>
+				<li><a href="https://www.sohopathi.com/bajnia-high-school/"><i class="fa fa-instagram"></i>Instragram Link</a></li>
+				<li><a href="https://www.sohopathi.com/bajnia-high-school/"><i class="fa fa-link"></i>Website Link</a></li>
+			</ul> 
+			<h5>Developed By: &copy Milon</h5>
+		</center>
+	</div>
+</body>
+</html>
